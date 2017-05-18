@@ -16,7 +16,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     	end
     	follow_redirect!
     	assert_template 'users/show'
-    	assert_not flash.empty?
+    	assert_not_empty flash
     	assert_equal("Welcome to the Sample App!", flash[:success])
     	# assert_select 'div#error_explanation'
     	# assert_select 'div.field_with_errors'
