@@ -159,14 +159,14 @@ aside {
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   @include box_sizing;
 }
 
 input {
   height: auto !important;
 }
-/* Error message */
+
 #error_explanation {
   color: red;
   ul {
@@ -180,4 +180,18 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -55px;
+  margin-bottom: 40px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
